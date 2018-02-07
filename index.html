@@ -2,8 +2,17 @@
 <html>
 <head>
 	<title>NNTEST</title>
+	<style type="text/css">
+		canvas {
+			border: 1px solid black;
+			width: 500px;
+			height: 500px;
+		}
+	</style>
 </head>
 <body>
+	<canvas id="input-canvas" width="500" height="500"></canvas>
+	<canvas id="output-canvas" width="500" height="500"></canvas>
 	<script data-main="src/main" src="node_modules/requirejs/require.js"></script>
 </body>
 </html>

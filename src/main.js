@@ -9,5 +9,11 @@ requirejs.config({
 });
 
 requirejs(["App"], function(App){
-	window.app = new App();
+	if (document.readyState == "complete"){
+		window.app = new App();
+	} else {
+		document.addEventListener("DOMContentLoaded", function(){
+			window.app = new App();
+		});
+	}
 });
